@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Comfortaa:wght@300;400;500;600;700&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Cairo', sans-serif !important;
+   
+}
+header.header{
+    background-image: url(../images/bg-1.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+/*nav*/
+nav.navbar .navbar-nav li a.nav-link{
+    color: #fff;
+    font-size: 16px;
+    line-height: 60px;
+    padding-left: 24px;
+    padding-right: 24px;
+    transition: all ease-in-out .5s;
+}
+nav.navbar .navbar-nav li a.nav-link:hover,
+nav.navbar .navbar-nav li a.nav-link.active{
+    color: #0575e6;
+    background-color: #fff;
+}
+nav.navbar.notranspa{
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+nav.navbar.notranspa .navbar-nav li a.nav-link{
+    color: #0575e6;
+}
+nav.navbar.notranspa .navbar-nav li a.nav-link:hover,
+nav.navbar.notranspa .navbar-nav li a.nav-link.active{
+    background-color: #0575e6;
+    color: #fff;
+}
+/*header*/
+header.header .overlay{
+    background-color: rgba(5, 117, 230, .9);
+    color: #fff;
+    padding: 40px 60px;
+    transform: translateY(20%);
+}
+header.header .personel img{
+    border:5px solid #73ade7;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+header.header .overlay h1{
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    color: #f9f9f9;
+}
+header.header .overlay h1 span{
+    font-size: 24px;
+}
+header.header .overlay ul{
+    margin-bottom: 40px;
+}
+header.header .overlay ul li a{
+    font-size: 24px;
+    color: #021b79;
+}
+header.header .overlay h2{
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+header.header .overlay p{
+    font-size: 15px;
+    line-height: 30px;
+    color: #89c4ff;
+    margin-bottom: 40px;
+}
+header.header .overlay a.cv{
+    font-size: 18px;
+    line-height: 32px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+header.header .overlay a.cv i{
+    margin-right: 5px;
+}
+/*liscence*/
+section.licence{
+    padding: 200px 0 80px;
+    background-color: #f6fbff;
+    
+}
+section.licence .licence-title{
+    padding-bottom: 30px;
+}
+section.licence .licence-title h2{
+    font-size: 30px;
+    line-height: 50px;
+    color: #196dd1;
+    position: relative;
+}
+section.licence .licence-title h2::after{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: #196dd1;
+    position: absolute;
+    bottom: -10px;
+    right: 50%;
+    transform: translateX(50%);
+}
+section.licence .licence-title h2 i{
+    display: block;
+}
+section.licence ul.timeline{
+    padding-right: 0;
+    padding-top: 45px;
+    list-style: none;
+    position: relative;
+}
+/*dakh l vertical line*/
+section.licence ul.timeline::before{
+    content: "";
+    width: 2px;
+    height: 82%;
+    position: absolute;
+    top: -30px;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: #196dd1;
+}
+/*lcards haha*/
+section.licence ul.timeline li .timebox{
+    background-color: #fff;
+    border: 2px solid #f4f5f5;
+    padding: 20px 25px;
+    width: 46%;
+    position: relative;
+}
+section.licence ul.timeline li .timebox h4{
+    font-size: 18px;
+    line-height: 30px;
+    color: #0F0F0F;
+}
+section.licence ul.timeline li .timebox h4 span{
+    color: #fff;
+    background-color: #0575e6;
+    margin-right: 25px;
+    padding: 0 5px;
+}
+section.licence ul.timeline li .timebox p{
+    font-size: 15px;
+    line-height: 22px;
+    color: #b1b1b1;
+}
+/*dik l3iba llikharja mn lcard*/
+section.licence ul.timeline li .timebox::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    border-right: 2px solid #f4f4f5;
+    border-bottom: 2px solid #f4f5f5;
+    top: 4%;
+    left: 99%;
+    transform: rotate(310deg);
+}
+section.licence ul.timeline li {
+    position: relative;
+    margin-bottom: -50px;
+}
+section.licence ul.timeline li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #196dd1;
+    position: absolute;
+    top: 8%;
+    left: 48%;
+    transform: translateX(50%);
+}
+section.licence ul.timeline li:nth-child(even){
+    direction: rtl;
+    text-align: right;
+}
+section.licence ul.timeline li:nth-child(even) .timebox h4 span{
+    float: right;
+    margin-right: 0;
+    margin-left: 25px;
+}
+section.licence ul.timeline li:nth-child(even) .timebox::after {
+    border: 0;
+    left: auto;
+    left: -10px;
+    border-left: 2px solid #f4f4f5;
+    border-top: 2px solid #f4f4f5;
+}
+/*stat*/
+section.statistics {
+    background-image: url(../images/bg-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.statistics .overlay{
+    background-color: rgba(5, 117, 230,.7);
+    padding: 150px 0;
+}
+section.statistics .overlay .stat p{
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+    margin-top: 30px;
+}
+section.statistics .overlay .stat .circle canvas{
+    background-color: #eef6ff;
+    padding: 10px;
+    border-radius: 50%;
+}
+section.statistics .overlay .stat .circle{
+    position: relative;
+}
+section.statistics .overlay .stat .circle span{
+    position: absolute;
+    color: #0575e6;
+    font-size: 24px;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+}
+/*gallery*/
+section.gallery{
+    padding: 75px 0 90px;
+}
+section.gallery .gallery-title{
+    margin-bottom: 35px;
+}
+section.gallery .gallery-title h2{
+    font-size: 30px;
+    line-height: 50px;
+    color: #0575e6;
+}
+section.gallery .gallery-work label{
+    font-size: 18px;
+    line-height: 35px;
+    color: #8f9899;
+    padding: 10px 30px;
+    background-color: #fff;
+    border: 2px solid #e4eeee;
+    border-radius: 2px;
+    cursor: pointer;
+    margin: 0 7px 40px;
+    transition: all .2s ease-in-out;
+}
+section.gallery .gallery-work label:hover{
+    background-color: #0575e6 ;
+    color: #eee;
+    border: 2px solid #0575e6;
+}
+section.gallery .gallery-work .items .item{
+    margin-bottom: 25px;
+    transition: all .5s ease-in-out;
+}
+/* this "~" = alt+2*/
+/* this css trick is like a click (when you click on a label ,the click gonna stay )*/
+section.gallery .gallery-work input.item-type-all:checked~label.label-type-all,
+section.gallery .gallery-work input.item-type-1:checked~label.label-type-1,
+section.gallery .gallery-work input.item-type-2:checked~label.label-type-2,
+section.gallery .gallery-work input.item-type-3:checked~label.label-type-3{
+    background-color: #0575e6 ;
+    color: #eee;
+    border: 2px solid #0575e6;
+}    
+section.gallery .gallery-work input.item-type-1:checked~.items .item-type-1,
+section.gallery .gallery-work input.item-type-2:checked~.items .item-type-2,
+section.gallery .gallery-work input.item-type-3:checked~.items .item-type-3{
+    transform: scale(1.08);
+}
+section.gallery .gallery-work input.item-type-1:checked~.items .item:not(.item-type-1),
+section.gallery .gallery-work input.item-type-2:checked~.items .item:not(.item-type-2),
+section.gallery .gallery-work input.item-type-3:checked~.items .item:not(.item-type-3){
+    transform: scale(.8);
+    opacity: .5;
+}
+/*contact first chapter*/
+section.contacts{
+    background-image: url(../images/bg-3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+section.contacts .overlay{
+    background-color: rgba(0, 0, 0,0.6);
+    padding-top: 70px;
+}
+section.contacts .overlay .testimonials-title h3{
+    font-size: 30px;
+    line-height: 50px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+section.contacts .overlay .testimonials .slider{
+    width: 65%;
+    margin: auto;
+}
+section.contacts .overlay .testimonials .slider .carousel-item{
+    min-height: 350px;
+}
+section.contacts .overlay .testimonials .slider .carousel-item .carousel-caption{
+    background-color: #fff;
+    width: 100%;
+    padding: 80px 70px 35px;
+    left: 0;
+}
+section.contacts .overlay .testimonials .slider .carousel-item .carousel-caption img{
+    position: absolute;
+    top:  -80px;
+    transform: translate(-50%,50%);
+    
+}
+section.contacts .overlay .testimonials .slider  .carousel-caption h4{
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+}
+section.contacts .overlay .testimonials .slider  .carousel-caption h4 span {
+    font-size: 15px;
+    color: #9c9c9c;
+}
+section.contacts .overlay .testimonials .slider  .carousel-caption p{
+    font-size: 15px;
+    line-height: 22px;
+    color: #b1b1b1;
+    margin-bottom: 25px;
+}
+section.contacts .overlay .testimonials .slider  .carousel-caption li a{
+    font-size: 24px;
+    color: #b2d8fe;
+    transition: all .5s ease;
+}
+section.contacts .overlay .testimonials .slider  .carousel-caption li a:hover{
+    color: #0575e6;
+}
+section.contacts .overlay .testimonials .slider  .carousel .carousel-indicators {
+    bottom: -5px;
+}
+section.contacts .overlay .testimonials .slider  .carousel .carousel-indicators button{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #0575e6;
+    background-color: #fff !important;
+}
+section.contacts .overlay .testimonials .slider  .carousel .carousel-indicators button.active{
+    background-color: #0575e6;
+}
+section.contacts .overlay .testimonials .slider  .carousel .carousel-control-next i,
+section.contacts .overlay .testimonials .slider  .carousel .carousel-control-prev i{
+    padding: 10px 20px ;
+    background-color: #0575e6;
+    border-radius: 50%;
+}
+section.contacts .overlay .testimonials .slider  .carousel .carousel-control-next{
+    transform: translateX(50%);
+}
+section.contacts .overlay .testimonials .slider  .carousel .carousel-control-prev{
+    transform: translateX(-50%);
+}
+/*contact second chapter*/
+section.contacts .overlay .contact-info{
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 50px;
+}
+section.contacts .overlay .contact-info .contact-title{
+    font-size: 30px;
+    color: #0575e6;
+    line-height: 50px;
+    margin-bottom: 35px;
+}
+section.contacts .overlay .contact-info .contact-form input,
+section.contacts .overlay .contact-info .contact-form textarea{
+    border: 2px solid #f1f1f1;
+    border-radius: 3px;
+    font-size: 18px;
+    color: #c2c2c2;
+    line-height: 35px;
+    padding-right: 45px;
+    text-align: left;
+    margin-bottom: 15px;
+    
+}
+section.contacts .overlay .contact-info .contact-form .col-sm-6{
+    position: relative;
+}
+section.contacts .overlay .contact-info .contact-form .col-sm-6::before{
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    top: 12px;
+    right: 30px;
+    font-size: 18px;
+    line-height: 25px;
+    color: #0575e6;
+    font-weight: 900;
+
+}
+section.contacts .overlay .contact-info .contact-form .col-sm-6:first-child::before{
+    content: "\f007";
+}
+section.contacts .overlay .contact-info .contact-form .col-sm-6:nth-child(2)::before{
+    content: "\f0e0";
+}
+section.contacts .overlay .contact-info .contact-form  button{
+    font-size: 24px;
+    color: #0575e6;
+    line-height: 25px;
+    background-color: #fff;
+    border: 3px solid #0575e6;
+    padding: 15px 70px;
+    border-radius: 3px;
+    max-width: 200px;
+    margin-left: 15px;
+    transition: ease-in-out .3s all;
+}
+section.contacts .overlay .contact-info .contact-form  button:hover{
+    color: #fff;
+    background-color: #0575e6;
+}
+section.contacts .overlay .contact-info ul.contact-us li{
+    font-size: 16px;
+    line-height: 30px;
+    color: #0575e6;
+}
+section.contacts .overlay .contact-info ul.social li{
+    margin-right: 10px;
+}
+section.contacts .overlay .contact-info ul.social li a{
+    background-color: #9bc8f5;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    transition: all ease .2s;
+}
+section.contacts .overlay .contact-info ul.social li a:hover{
+    background-color: #0575e6;
+}
+section.contacts .overlay .contact-info ul.contact-us li i{
+    margin-right: 10px;
+}
+/*copyright*/
+section.contacts .overlay .copyright p{
+    font-size: 18px;
+    color: #ccc;
+    line-height: 77px;
+    margin: 0;
+}
