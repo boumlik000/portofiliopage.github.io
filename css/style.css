@@ -46,12 +46,16 @@ header.header .overlay{
     padding: 40px 60px;
     transform: translateY(20%);
 }
-header.header .personel img{
+header.header .personel {
+    background-image: url(../images/profile-blue.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
     border:5px solid #73ade7;
-    width:100px;
-    height:100px;
     margin-bottom: 20px;
     border-radius: 50%;
+    margin: 10px auto;
 }
 header.header .overlay h1{
     font-size: 36px;
