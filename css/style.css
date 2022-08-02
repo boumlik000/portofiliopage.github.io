@@ -48,8 +48,8 @@ header.header .overlay{
 }
 header.header .personel img{
     border:5px solid #73ade7;
-    width:30px;
-    height:30px;
+    width:100px;
+    height:100px;
     margin-bottom: 20px;
     border-radius: 50%;
 }
